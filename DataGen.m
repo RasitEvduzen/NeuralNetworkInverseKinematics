@@ -4,7 +4,6 @@ clc,clear all,close all,warning off;
 % Written By Rasit.
 
 %% Create Robot Forward Kinematic Simulation
-
 %---------------------- Robot DH Parameters ----------------------%
 a2 = 100; a3 = 100; d1 = 100;   % Robot Link Lenght
 a     = [0,0,a2,a3];
@@ -15,6 +14,7 @@ NofData = 1e5;
 qmax = [180 90 -90];    % Good Result-1 [180 90 -90];
 qmin = [0 0 0];         % Good Result-1 [0 0 0];
 ThetaRand = [qmax(1)*rand(NofData,1)-qmin(1) qmax(2)*rand(NofData,1)-qmin(2) qmax(3)*rand(NofData,1)-qmin(3)];
+
 
 EEPose = zeros(NofData,3);
 SimPlot = 0;

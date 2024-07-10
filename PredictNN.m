@@ -31,7 +31,7 @@ TestTheta = DeNormalization(TestTheta',OutputMax,OutputMin);
 
 % Plot Robot NN Output
 figure('units','normalized','outerposition',[0 0 1 1],'color','w')
-gif('NNTraj2.gif')
+% gif('NNTraj2.gif')
 for k=1:size(TestTheta,1)
 
     clf
@@ -61,7 +61,7 @@ for k=1:size(TestTheta,1)
     plot3(TrajPlot(:,1),TrajPlot(:,2),TrajPlot(:,3),'k','Linewidth',2)
     plot3(NNEEPose(:,1),NNEEPose(:,2),NNEEPose(:,3),'r--','Linewidth',2)
     scatter3(NNPosePoint(1),NNPosePoint(2),NNPosePoint(3),'filled','o','MarkerEdgeColor','k','MarkerFaceColor',[0 .75 .75])
-    gif
+%     gif
     drawnow
 end
 
