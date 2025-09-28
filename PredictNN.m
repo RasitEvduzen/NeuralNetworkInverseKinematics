@@ -17,7 +17,7 @@ switch TrajSelect
     case 'c'
         cy = linspace(150,180,NumOfSample);
         cx = 50*sin(.5*cy);
-        cz = 50*cos(.5*cy)+125;
+        cz = 25*cos(.5*cy)+125;
         TestInput = [cx; cy; cz]'; % Target EEPose
     otherwise
         display("Choose eligible trajector!")
